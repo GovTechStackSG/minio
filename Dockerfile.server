@@ -16,6 +16,7 @@ RUN \
      chmod +x /usr/bin/minio  && \
      chmod +x /usr/bin/docker-entrypoint.sh && \
      chmod +x /usr/bin/healthcheck.sh && \
+     mkdir -p /home/minio && \
      chmod 770 /home/minio && \
      chown :root /home/minio
 
